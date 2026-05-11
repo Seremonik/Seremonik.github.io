@@ -1,0 +1,22 @@
+locale = "en"
+label = "English"
+weight = 1
+title = "Michal Dev Blog"
+
+[params]
+  displayName = "English"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  logo = "img/blowfish_logo_transparent.png"
+  description = "A powerful, lightweight theme for Hugo."
+
+[params.author]
+  name = "Michał"
+  email = ""
+  headline = "Senior Unity Developer"
+  bio = "Writing about game development, Unity architecture and shipping AAA games."
+  links = [
+    { linkedin = "https://linkedin.com/in/yourprofile" },
+    { github = "https://github.com/yourusername" },
+  ]
