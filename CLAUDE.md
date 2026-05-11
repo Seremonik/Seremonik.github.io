@@ -9,6 +9,11 @@ Hugo + Blowfish theme, hosted on GitHub Pages.
 - Content in `content/posts/`
 - Auto-deploys to GitHub Pages on push to `main`
 
+## Author Links
+- GitHub: https://github.com/Seremonik
+- LinkedIn: https://www.linkedin.com/in/micha%C5%82-duziak-09a588120/
+- Configured in: `config/_default/languages.en.toml` (`[params.author] links`) and `config/_default/menus.en.toml` (nav icons)
+
 ### Landing page (`/`)
 - Short author bio + headline
 - Recent blog posts section

@@ -29,13 +29,13 @@
     />
     <xhtml:link
       rel="alternate"
-      hreflang="pt-br"
-      href="http://localhost:1313/pt-br/"
+      hreflang="es"
+      href="http://localhost:1313/es/"
     />
     <xhtml:link
       rel="alternate"
-      hreflang="es"
-      href="http://localhost:1313/es/"
+      hreflang="pt-br"
+      href="http://localhost:1313/pt-br/"
     />
     <xhtml:link
       rel="alternate"
@@ -62,6 +62,11 @@
   <url>
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-05-11T11:36:04+02:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/about/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
@@ -141,13 +146,13 @@
     />
     <xhtml:link
       rel="alternate"
-      hreflang="es"
-      href="http://localhost:1313/es/categories/"
+      hreflang="pt-br"
+      href="http://localhost:1313/pt-br/categories/"
     />
     <xhtml:link
       rel="alternate"
-      hreflang="pt-br"
-      href="http://localhost:1313/pt-br/categories/"
+      hreflang="es"
+      href="http://localhost:1313/es/categories/"
     />
     <xhtml:link
       rel="alternate"
@@ -241,13 +246,13 @@
     />
     <xhtml:link
       rel="alternate"
-      hreflang="es"
-      href="http://localhost:1313/es/tags/"
+      hreflang="pt-br"
+      href="http://localhost:1313/pt-br/tags/"
     />
     <xhtml:link
       rel="alternate"
-      hreflang="pt-br"
-      href="http://localhost:1313/pt-br/tags/"
+      hreflang="es"
+      href="http://localhost:1313/es/tags/"
     />
     <xhtml:link
       rel="alternate"

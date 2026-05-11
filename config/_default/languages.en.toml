@@ -12,11 +12,11 @@ title = "Michal Dev Blog"
   description = "A powerful, lightweight theme for Hugo."
 
 [params.author]
-  name = "Michał"
+  name = "Michał Duziak"
   email = ""
   headline = "Senior Unity Developer"
   bio = "Writing about game development, Unity architecture and shipping AAA games."
   links = [
-    { linkedin = "https://linkedin.com/in/yourprofile" },
-    { github = "https://github.com/yourusername" },
+    { linkedin = "https://www.linkedin.com/in/micha%C5%82-duziak-09a588120/" },
+    { github = "https://github.com/Seremonik" },
   ]
