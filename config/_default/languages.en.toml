@@ -8,7 +8,7 @@ title = "Michal Dev Blog"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  logo = "img/blowfish_logo_transparent.png"
+  logo = "img/shipthecode_logo_high_res.png"
   description = "A powerful, lightweight theme for Hugo."
 
 [params.author]
