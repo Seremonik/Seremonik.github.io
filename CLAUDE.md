@@ -49,3 +49,4 @@ git add . && git commit -m "message" && git push
 ## Rules
 - Never edit inside `themes/blowfish/` — it's a submodule
 - Never delete `static/CNAME` — breaks custom domain
+- Never use the em dash character (—) in any content or code

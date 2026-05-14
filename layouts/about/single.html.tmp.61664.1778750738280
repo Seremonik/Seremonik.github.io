@@ -1,0 +1,183 @@
+{{ define "main" }}
+<style>
+section.prose {
+  max-width: 100% !important;
+  display: flex;
+  justify-content: center;
+}
+
+.about-page {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.about-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  .about-two-col { grid-template-columns: 1fr; }
+}
+
+.about-hero { margin-bottom: 3rem; }
+
+.about-col-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-avatar {
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgb(var(--color-primary-400));
+  box-shadow: 0 0 32px rgba(var(--color-primary-500), 0.3);
+}
+
+.about-col-right h1 {
+  margin: 0 0 0.25rem 0;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.about-headline {
+  color: rgb(var(--color-primary-400));
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.about-tagline {
+  margin: 0 0 1rem 0;
+  opacity: 0.75;
+}
+
+.about-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.about-badge {
+  background: rgba(var(--color-primary-500), 0.15);
+  color: rgb(var(--color-primary-400));
+  border: 1px solid rgba(var(--color-primary-400), 0.3);
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.about-bio p {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+.about-section { margin-bottom: 3rem; }
+
+.about-section-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(var(--color-primary-400), 0.3);
+  color: rgb(var(--color-primary-400));
+}
+
+.about-project-card {
+  background: rgba(var(--color-neutral-800), 0.4);
+  border: 1px solid rgba(var(--color-neutral-600), 0.4);
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.about-project-info {
+  padding: 1.5rem;
+}
+
+.about-project-info h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.about-project-info p {
+  margin: 0;
+  opacity: 0.85;
+  line-height: 1.7;
+}
+
+.about-media-wrapper {
+  height: 100%;
+  min-height: 220px;
+  overflow: hidden;
+}
+
+.about-media-wrapper video,
+.about-project-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+</style>
+
+<div class="about-page">
+
+  <!-- Hero: photo left, bio right -->
+  <div class="about-two-col about-hero">
+    <div class="about-col-left">
+      <img src="/profile_pic.png" alt="Michał Duziak" class="about-avatar" />
+    </div>
+    <div class="about-col-right">
+      <h1>Michał Duziak</h1>
+      <p class="about-headline">Senior Unity Developer &amp; Tech Lead</p>
+      <p class="about-tagline">10+ years shipping games across PC, console, mobile, and XR.</p>
+      <div class="about-bio">
+        <p>I'm a Senior Unity Developer and Tech Lead with over a decade of experience building games and interactive applications. I hold the <strong>Unity Certified Expert Programmer</strong> credential and have spent the last several years leading teams and owning architecture on production-scale projects.</p>
+        <p>Most recently I served as Tech Lead on a live MMO with 50+ engineers. I care about scalable systems, clean code, and shipping things that actually work.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Projects -->
+  <div class="about-section">
+    <h2 class="about-section-title">Featured Projects</h2>
+
+    <!-- Sandbox -->
+    <div class="about-project-card about-two-col">
+      <div class="about-project-info">
+        <h3>Live MMO Gameplay UI: The Sandbox</h3>
+        <p>Tech Lead for the gameplay UI layer of a live MMO. Designed scalable input, state, and navigation architecture used across the entire game by a team of 50+ engineers. Translated complex game design requirements into robust, extensible runtime systems built with Unity UI Toolkit.</p>
+      </div>
+      <div class="about-media-wrapper">
+        <video autoplay loop muted playsinline preload="auto">
+          <source src="/sandbox_trailer.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <!-- Magic Leap -->
+    <div class="about-project-card about-two-col">
+      <div class="about-project-info">
+        <h3>Magic Leap — XR Application</h3>
+        <p>Production C# SDK wrapping the MagicLeap native C++ API using P/Invoke marshaling. Exposed hardware capabilities to Unity with full unmanaged-to-managed interop and custom editor tooling built with UI Toolkit.</p>
+      </div>
+      <div class="about-media-wrapper">
+        <img src="/magicleap.jpg" alt="Magic Leap" class="about-project-image" />
+      </div>
+    </div>
+  </div>
+
+</div>
+{{ end }}
