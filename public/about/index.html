@@ -709,7 +709,7 @@ section.prose {
 }
 
 .about-col-right h1 {
-  margin: 0 0 0.25rem 0;
+  margin: 0 0 1.25rem 0;
   font-size: 2rem;
   font-weight: 800;
 }
@@ -799,6 +799,69 @@ section.prose {
 }
 
  
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.4s ease;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  flex-shrink: 0;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.carousel-btn:hover { background: rgba(0,0,0,0.7); }
+.carousel-prev { left: 8px; }
+.carousel-next { right: 8px; }
+
+.carousel-dots {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.carousel-dot.active { background: #fff; }
+
+ 
 .about-contact {
   display: flex;
   flex-direction: column;
@@ -873,12 +936,10 @@ section.prose {
   
   <div class="about-two-col about-hero">
     <div class="about-col-left">
-      <img src="/profile_pic.png" alt="Michał Duziak" class="about-avatar" />
+      <img src="/profile_pic.png" alt="Michał Duziak" class="about-avatar nozoom" />
     </div>
     <div class="about-col-right">
       <h1>Michał Duziak</h1>
-      <p class="about-headline">Senior Unity Developer &amp; Tech Lead</p>
-      <p class="about-tagline">10+ years building production software across PC, console, mobile, and XR.</p>
       <div class="about-bio">
         <p>I'm a Senior Unity Developer and Tech Lead with over a decade of experience building games and interactive applications. I hold the <strong>Unity Certified Expert Programmer</strong> credential and have spent the last several years leading teams and owning architecture on production-scale projects.</p>
         <p>Most recently I served as Tech Lead on a live MMO with 50+ engineers. I care about scalable systems, clean code, and shipping things that actually work.</p>
@@ -906,7 +967,7 @@ section.prose {
     
     <div class="about-project-card about-two-col">
       <div class="about-media-wrapper">
-        <img src="/magicleap.jpg" alt="Magic Leap" class="about-project-image" />
+        <img src="/magicleap.jpg" alt="Magic Leap" class="about-project-image nozoom" />
       </div>
       <div class="about-project-info">
         <h3>Magic Leap: XR Application</h3>
@@ -921,14 +982,27 @@ section.prose {
         <p>Developed an interactive guest experience platform deployed across screens throughout one of the world's largest cruise ships. Architected a feature-based modular system with async workflows (UniTask), Addressables asset streaming, and real-time backend communication via REST API and RabbitMQ.</p>
       </div>
       <div class="about-media-wrapper">
-        <img src="/cruise.jpg" alt="Lucis Reality Labs" class="about-project-image" />
+        <img src="/cruise.jpg" alt="Lucis Reality Labs" class="about-project-image nozoom" />
       </div>
     </div>
 
     
     <div class="about-project-card about-two-col">
       <div class="about-media-wrapper">
-        <img src="/magicleap.jpg" alt="Knights of Unity" class="about-project-image" />
+        <div class="carousel">
+          <div class="carousel-track">
+            <img src="/u1.webp" alt="Knights of Unity 1" class="about-project-image carousel-slide nozoom" />
+            <img src="/u2.png" alt="Knights of Unity 2" class="about-project-image carousel-slide nozoom" />
+            <img src="/u3.jpeg" alt="Knights of Unity 3" class="about-project-image carousel-slide nozoom" />
+          </div>
+          <button class="carousel-btn carousel-prev" aria-label="Previous">&#8249;</button>
+          <button class="carousel-btn carousel-next" aria-label="Next">&#8250;</button>
+          <div class="carousel-dots">
+            <span class="carousel-dot active"></span>
+            <span class="carousel-dot"></span>
+            <span class="carousel-dot"></span>
+          </div>
+        </div>
       </div>
       <div class="about-project-info">
         <h3>Knights of Unity</h3>
@@ -943,7 +1017,7 @@ section.prose {
         <p>Delivered real-time XR applications for the real estate industry across HoloLens, GearVR, Oculus Rift, and HTC Vive. Built AR features with ARCore and ARKit in Agile client-facing teams.</p>
       </div>
       <div class="about-media-wrapper">
-        <img src="/realestate.jpg" alt="VR Global" class="about-project-image" />
+        <img src="/realestate.jpg" alt="VR Global" class="about-project-image nozoom" />
       </div>
     </div>
   </div>
@@ -960,7 +1034,7 @@ section.prose {
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="22" height="22"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
         </a>
         <a href="mailto:michal.duziak94@gmail.com" class="about-contact-btn" aria-label="Email">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="22" height="22"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="22" height="22"><path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
         </a>
       </div>
       <div class="about-newsletter">
@@ -973,6 +1047,24 @@ section.prose {
   </div>
 
 </div>
+<script>
+  document.querySelectorAll('.carousel').forEach(function(carousel) {
+    const track = carousel.querySelector('.carousel-track');
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const dots = carousel.querySelectorAll('.carousel-dot');
+    let current = 0;
+
+    function goTo(index) {
+      current = (index + slides.length) % slides.length;
+      track.style.transform = 'translateX(-' + (current * 100) + '%)';
+      dots.forEach(function(d, i) { d.classList.toggle('active', i === current); });
+    }
+
+    carousel.querySelector('.carousel-prev').addEventListener('click', function() { goTo(current - 1); });
+    carousel.querySelector('.carousel-next').addEventListener('click', function() { goTo(current + 1); });
+    dots.forEach(function(dot, i) { dot.addEventListener('click', function() { goTo(i); }); });
+  });
+</script>
 
         
 
