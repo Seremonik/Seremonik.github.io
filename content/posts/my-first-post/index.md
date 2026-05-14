@@ -1,7 +1,7 @@
 ---
 title: "My First Post"
 date: 2026-05-11T11:36:04+02:00
-draft: false
+draft: true
 description: "This is a summary that appears on the blog card."
 ---
 
