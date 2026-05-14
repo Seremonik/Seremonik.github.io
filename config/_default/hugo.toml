@@ -18,6 +18,11 @@ buildFuture = false
 
 enableEmoji = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 googleAnalytics = "G-PEDMYR1V0K"
 
 [pagination]

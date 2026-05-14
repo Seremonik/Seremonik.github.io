@@ -9,7 +9,7 @@ title = "Ship the code"
   rtl = false
   dateFormat = "2 January 2006"
   logo = "img/shipthecode_logo_high_res.png"
-  description = "A powerful, lightweight theme for Hugo."
+  description = "Senior Unity Developer & Tech Lead. Writing about game development, Unity architecture, and shipping AAA games."
 
 [params.author]
   name = "Michał Duziak"
