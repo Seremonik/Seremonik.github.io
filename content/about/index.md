@@ -72,8 +72,15 @@ showHeadingAnchors: false
 </div>
 
 <style>
+section.prose {
+  max-width: 100% !important;
+  display: flex;
+  justify-content: center;
+}
+
 .about-page {
   max-width: 860px;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
 }
