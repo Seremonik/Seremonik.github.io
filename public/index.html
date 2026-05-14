@@ -280,6 +280,10 @@
   .main-menu > a {
     font-family: 'JetBrains Mono', monospace !important;
     font-size: 1.4rem !important;
+    text-decoration: none !important;
+  }
+  .main-menu > a span.active {
+    text-decoration: none !important;
   }
 </style>
 
@@ -355,8 +359,8 @@
     
   
   
-    <a href="/" class="text-base font-medium truncate min-w-0 shrink">
-      Ship the <span style="color: rgb(var(--color-primary-400));">code</span>
+    <a href="/" class="text-base font-medium truncate min-w-0 shrink" style="text-decoration: none;">
+      Ship the <span style="color: rgb(var(--color-primary-400)); border-bottom: 2px solid rgb(var(--color-primary-400)); padding-bottom: 1px;">code</span>
     </a>
   
   <div class="flex items-center ms-auto">

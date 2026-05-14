@@ -22,8 +22,8 @@
     {{ end }}
   {{ end }}
   {{ if not .Site.Params.disableTextInHeader | default true }}
-    <a href="{{ "" | relLangURL }}" class="text-base font-medium truncate min-w-0 shrink">
-      Ship the <span style="color: rgb(var(--color-primary-400));">code</span>
+    <a href="{{ "" | relLangURL }}" class="text-base font-medium truncate min-w-0 shrink" style="text-decoration: none;">
+      Ship the <span style="color: rgb(var(--color-primary-400)); border-bottom: 2px solid rgb(var(--color-primary-400)); padding-bottom: 1px;">code</span>
     </a>
   {{ end }}
   <div class="flex items-center ms-auto">
