@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unity Voxel Engine on Ship the code</title>
+    <link>http://localhost:1313/series/unity-voxel-engine/</link>
+    <description>Recent content in Unity Voxel Engine on Ship the code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2026 Michał Duziak</copyright>
+    <lastBuildDate>Sun, 17 May 2026 22:08:04 +0200</lastBuildDate><atom:link href="http://localhost:1313/series/unity-voxel-engine/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Unity Voxel Engine #0: Binary Greedy Meshing from Scratch</title>
+      <link>http://localhost:1313/posts/unity-voxel-engine-0-introduction/</link>
+      <pubDate>Sun, 17 May 2026 22:08:04 +0200</pubDate>
+      
+      <guid>http://localhost:1313/posts/unity-voxel-engine-0-introduction/</guid>
+      <description>&lt;p&gt;Ever since my adventure with gamedev began, voxels were always my favorite subject. Vast open worlds with infinite possibilities kept teasing my curiosity &amp;ndash; how is it all made? How do games like Minecraft render enormous chunks of terrain without grinding to a halt?&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

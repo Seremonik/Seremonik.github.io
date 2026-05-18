@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rendering on Ship the code</title>
+    <link>http://localhost:1313/tags/rendering/</link>
+    <description>Recent content in Rendering on Ship the code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2026 Michał Duziak</copyright>
+    <lastBuildDate>Sun, 17 May 2026 22:08:04 +0200</lastBuildDate><atom:link href="http://localhost:1313/tags/rendering/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Unity Voxel Engine #0: Series Introduction</title>
+      <link>http://localhost:1313/posts/unity-voxel-engine-0-introduction/</link>
+      <pubDate>Sun, 17 May 2026 22:08:04 +0200</pubDate>
+      
+      <guid>http://localhost:1313/posts/unity-voxel-engine-0-introduction/</guid>
+      <description>&lt;figure&gt;&#xD;&#xA;  &lt;video&#xD;&#xA;    class=&#34;w-full rounded-md aspect-video object-contain&#34;preload=&#34;auto&#34; autoplay loop muted playsinline&gt;&#xD;&#xA;    &lt;source src=&#34;http://localhost:1313/posts/unity-voxel-engine-0-introduction/preview.mp4&#34;&gt;&#xD;&#xA;    &lt;p&gt;Your browser cannot play this video. &lt;a href=&#34;http://localhost:1313/posts/unity-voxel-engine-0-introduction/preview.mp4&#34;&gt;Download video&lt;/a&gt;.&lt;/p&gt;&#xD;&#xA;  &lt;/video&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&#xA;&lt;p&gt;Ever since my adventure with gamedev began, voxels were always my favorite subject. Vast open worlds with infinite possibilities kept teasing my curiosity: how is it all made? How do games like Minecraft render enormous chunks of terrain without grinding to a halt?&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/unity-voxel-engine-0-introduction/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

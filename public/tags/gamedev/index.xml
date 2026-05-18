@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gamedev on Ship the code</title>
+    <link>http://localhost:1313/tags/gamedev/</link>
+    <description>Recent content in Gamedev on Ship the code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2026 Michał Duziak</copyright>
+    <lastBuildDate>Sun, 17 May 2026 22:08:04 +0200</lastBuildDate><atom:link href="http://localhost:1313/tags/gamedev/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Unity Voxel Engine #0: Series Introduction</title>
+      <link>http://localhost:1313/posts/unity-voxel-engine-0-introduction/</link>
+      <pubDate>Sun, 17 May 2026 22:08:04 +0200</pubDate>
+      
+      <guid>http://localhost:1313/posts/unity-voxel-engine-0-introduction/</guid>
+      <description>Kicking off a series on building a voxel engine in Unity from scratch, covering Binary Greedy Meshing, flood lighting, Ambient Occlusion, and custom physics.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/unity-voxel-engine-0-introduction/featured.png" />
+    </item>
+    
+  </channel>
+</rss>
