@@ -1,5 +1,5 @@
 ---
-title: "Unity Voxel Engine #0: Series Introduction"
+title: "Unity Voxel Engine #0: A Series Introduction"
 date: 2026-05-17T22:08:04+02:00
 draft: false
 description: "Kicking off a series on building a voxel engine in Unity from scratch, covering Binary Greedy Meshing, flood lighting, Ambient Occlusion, and custom physics."
